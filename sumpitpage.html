@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Sign Up Page</title> 
+</head>
+<body >
+    <div id="alertmsg" class="modelalert  d-none align-items-center justify-content-center">
+<div class="modelalertmssg container text-center">
+<h2 class="my-2">inviled data</h2>
+<h3 class="my-2">plz cheke your inputs</h3>
+<button id= "okmsg" class="btn btn-danger my-3">ok</button>
+</div>
+    </div>
+    <div id="alertmsgex" class="modelalert  d-none align-items-center justify-content-center">
+        <div class="modelalertmssg container text-center">
+        <h2 class="my-2">This user name already exists</h2>
+        <h3 class="my-2">plz change it or try to login</h3>
+        <button id= "okmsgex" class="btn btn-danger m-3">ok</button>
+        <a href="index.html" class="btn btn-success m-3">Login</a>
+        </div>
+            </div>
+    <div id="alertmsgemex" class="modelalert  d-none align-items-center justify-content-center">
+        <div class="modelalertmssg container text-center">
+        <h2 class="my-2">This E-mail already exists</h2>
+        <h3 class="my-2">plz change it or try to login</h3>
+        <button id= "okmsgemex" class="btn btn-danger m-3">ok</button>
+        <a href="index.html" class="btn btn-success m-3">Login</a>
+        </div>
+            </div>
+<div id="sumpitp" class="container d-flex flex-column justify-content-center align-items-center g-5  loginform">
+  <h1 class="my-5 wellcome">Registration Page</h1>
+  <div class="form-floating mb-4 w-100">
+    <input
+      type="text"
+      class="form-control is-invalid"
+      id="sumpitUserName"
+      placeholder="Name"
+      oninput="chack(this)"
+    />
+    <span class="alert alert-danger my-2 py-1 d-none">user name must be at least 4 characters</span> 
+    <label for="sumpitUserName" class="text-dark">Name</label>
+</div>
+  <div class="form-floating mb-4 w-100">
+    <input
+      type="email"
+      class="form-control is-invalid"
+      id="sumpitUserEmail"
+      placeholder="E-mail"
+      oninput="chack(this)"
+    />
+    <span class="alert alert-danger my-2 py-1 d-none">E-mail must be vaild</span>  
+    <label for="sumpitUserEmail" class="text-dark">E-mail</label>
+   
+</div>
+  <div class="form-floating mb-4 w-100">
+    
+    <input
+      type="password"
+      class="form-control is-invalid"
+      id="sumpitUserPassword"
+      placeholder="Password"
+      oninput="chack(this)"
+    />
+    <span class="alert alert-danger my-2 py-1 d-none">password  must be at least 8 characters<br>1 - at least (1) capital letter <br>2 - at least (1) small letter <br>3 - at least (1) number <br>  4 - at least (1) special character</span>  
+    <label for="sumpitUserPassword" class="text-dark">Password</label>
+    
+</div>
+  <a class="btn btn-outline-info" id="sumpitBtn" >Sign Up</a>
+<a href="index.html" class="btn btn-success my-3">login</a>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sumpitpage.js"></script>
+</body>
+</html>

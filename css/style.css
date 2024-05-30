@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#4d4646; 
+    color: white;
+    
+}
+
+.px{
+    padding: 30px;
+}
+.loginform{
+    height: 100vh;
+}
+.modelalert{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7) );
+}
+.modelalertmssg{
+    background-color: black;
+    border: 2px red solid;
+    height: 25%;
+    
+}
+.user{
+    box-shadow:-5px 2px 54px -9px rgba(0, 0, 0, 1) ;  
+padding: 20px;
+    font-size: 50px;
+}
+.wellcome{
+    font-size: 70px;
+    text-align: center;
+    
+    padding: 20px;
+  box-shadow:-5px 2px 54px -9px rgba(0, 0, 0, 1) ;  
+}
+.navg{
+background-color: #4d4646;
+box-shadow:-5px 2px 54px -9px rgba(0, 0, 0, 1) ; 
+color: white;
+}

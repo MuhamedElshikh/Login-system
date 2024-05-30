@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login Page</title>
+    
+</head>
+<body >
+  <div id="alertmsg" class="modelalert  d-none align-items-center justify-content-center">
+    <div class="modelalertmssg container text-center">
+    <h2 class="my-2">inviled password</h2>
+    <h3 class="my-2">plz cheke your inputs</h3>
+    <button id= "okmsg" class="btn btn-danger my-3">ok</button>
+    </div>
+        </div>
+  <div id="alertmsgm" class="modelalert  d-none align-items-center justify-content-center">
+    <div class="modelalertmssg container text-center">
+    <h2 class="my-2">inviled E-mail</h2>
+    <h3 class="my-2">plz cheke your inputs</h3>
+    <button id= "okmsgm" class="btn btn-danger my-3">ok</button>
+    </div>
+        </div>
+<div  class="container d-flex flex-column justify-content-center align-items-center g-5 loginform">
+  <h1 class="my-5 wellcome">Login Page</h1>
+  <div class="form-floating mb-4 w-100">
+    <input
+      type="text"
+      class="form-control"
+      id="userName"
+      placeholder="enter your e-mail"
+    />
+    <label for="userName" class="text-dark">E-mail</label>
+  </div>
+  <div class="form-floating mb-4 w-100">
+    
+    <input
+      type="password"
+      class="form-control"
+      id="userPassword"
+      placeholder="password"
+    />
+    <label for="userPassword" class="text-dark ">password</label>
+  </div>
+  
+  <a href="#" class="btn btn-outline-success my-3 w-25 text-white"  id="loginBtn" >login</a>
+  <span>dont have e-mail ? <a href="sumpitpage.html" class="btn text-primary" id="SignUpPage">Sign Up</a></span>
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/index.js"></script>
+   <script>
+    window.history.forward();
+    function noBacke(){
+      window.history.forward()
+    }
+   </script>
+</body>
+</html>
